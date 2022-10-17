@@ -1,0 +1,11 @@
+<hr>
+<h1>Dbz module</h1>
+<hr>
+<div class="row">
+    <app-personajes [characters]="characters">
+    </app-personajes>
+    <div class="col">
+        <app-add [newchar]="newchar"
+        (onNewCharacter)="add( $event )"></app-add>
+    </div>
+</div>
